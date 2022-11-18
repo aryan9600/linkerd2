@@ -42,7 +42,7 @@ jobs:
     continue-on-error: ${{ matrix.checks == 'advisories' }}
     steps:
     - uses: actions/checkout@1e204e9a9253d643386038d443f96446fa156a97
-    - uses: EmbarkStudios/cargo-deny-action@0ca727bbae7b7b578b9a5f98186caac35aa2a00d
+    - uses: EmbarkStudios/cargo-deny-action@8a8607bd8e2b3a514d5a40174cc7c55b229d9ba7
       with:
         command: check bans licenses sources
 
